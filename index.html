@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="CareerHub responsive internship and job discovery interface">
+    <title>CareerHub | Find your next opportunity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body><a class="skip" href="#main">Skip to content</a>
+    <div class="shell">
+        <header class="header"><a class="brand" href="#home"><b>C</b><span>Career<span>Hub</span></span></a>
+            <nav class="nav" aria-label="Primary"><a class="active" href="#home">Discover</a><a
+                    href="#opportunities">Opportunities</a><a href="#applications">Applications</a><a
+                    href="#resources">Resources</a></nav>
+            <div class="actions"><button id="theme" aria-label="Toggle dark mode">◐</button><button id="menu"
+                    aria-expanded="false" aria-controls="mobileNav">☰</button><button class="avatar"
+                    id="profile">JR</button></div>
+        </header>
+        <nav class="mobile" id="mobileNav" hidden><a href="#home">Discover</a><a
+                href="#opportunities">Opportunities</a><a href="#applications">Applications</a><a
+                href="#resources">Resources</a></nav>
+        <main id="main">
+            <section class="hero" id="home">
+                <div>
+                    <p class="eyebrow">YOUR CAREER, YOUR NEXT MOVE</p>
+                    <h1>Find work that<br><span>moves you forward.</span></h1>
+                    <p class="lead">Discover internships and entry-level roles, save the right opportunities and keep
+                        every application organized.</p>
+                    <form id="searchForm" class="search" role="search">
+                        <div>⌕<input id="keyword" type="search" placeholder="Job title, skill or company"
+                                aria-label="Job title, skill or company"></div>
+                        <div>⌖<input id="location" placeholder="Location or remote" aria-label="Location"></div>
+                        <button>Search jobs</button>
+                    </form>
+                    <div class="popular"><span>Popular:</span><button data-query="Frontend">Frontend</button><button
+                            data-query="Python">Python</button><button data-query="Data Analyst">Data
+                            Analyst</button><button data-query="UI/UX">UI/UX</button></div>
+                </div>
+                <div class="hero-art">
+                    <div class="orbit">
+                        <div class="core"><small>Next</small><strong>STEP</strong><span>Starts here.</span></div><i
+                            class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i>
+                    </div>
+                    <div class="float f1"><b>12</b><small>Applications</small></div>
+                    <div class="float f2"><b>86%</b><small>Profile strength</small></div>
+                </div>
+            </section>
+            <section class="stats">
+                <div><b>1,240+</b><span>open opportunities</span></div>
+                <div><b>380+</b><span>companies</span></div>
+                <div><b>18</b><span>skill categories</span></div>
+                <div><b>92%</b><span>remote-friendly</span></div>
+            </section>
+            <section class="section" id="opportunities">
+                <div class="heading">
+                    <div>
+                        <p class="eyebrow">CURATED FOR YOU</p>
+                        <h2>Featured opportunities</h2>
+                    </div><button class="outline" id="clear">View all</button>
+                </div>
+                <div class="filters"><button class="active" data-filter="all">All roles</button><button
+                        data-filter="internship">Internships</button><button
+                        data-filter="full-time">Full-time</button><button data-filter="remote">Remote</button></div>
+                <div class="jobs" id="jobs">
+                    <article class="job" data-type="internship" data-remote="yes"
+                        data-keywords="frontend javascript html css ui">
+                        <div class="jobtop"><span class="logo peach">P</span><button class="save"
+                                aria-label="Save Frontend Developer Intern" aria-pressed="false">♡</button></div>
+                        <p class="company">PixelWorks Studio</p>
+                        <h3>Frontend Developer Intern</h3>
+                        <div class="meta"><span>Remote</span><span>3 months</span></div>
+                        <div class="skills"><span>HTML/CSS</span><span>JavaScript</span><span>UI</span></div>
+                        <div class="jobbottom"><strong>₹12k–18k/mo</strong><button class="apply"
+                                data-job="Frontend Developer Intern">Apply</button></div>
+                    </article>
+                    <article class="job" data-type="full-time" data-remote="yes"
+                        data-keywords="python backend api sql flask django">
+                        <div class="jobtop"><span class="logo blue">N</span><button class="save"
+                                aria-label="Save Junior Python Developer" aria-pressed="false">♡</button></div>
+                        <p class="company">NovaStack Labs</p>
+                        <h3>Junior Python Developer</h3>
+                        <div class="meta"><span>Remote</span><span>Full-time</span></div>
+                        <div class="skills"><span>Python</span><span>SQL</span><span>APIs</span></div>
+                        <div class="jobbottom"><strong>₹4.5–7 LPA</strong><button class="apply"
+                                data-job="Junior Python Developer">Apply</button></div>
+                    </article>
+                    <article class="job" data-type="internship" data-remote="no"
+                        data-keywords="data analyst excel sql python powerbi analytics">
+                        <div class="jobtop"><span class="logo green">D</span><button class="save"
+                                aria-label="Save Data Analyst Intern" aria-pressed="false">♡</button></div>
+                        <p class="company">DataMint</p>
+                        <h3>Data Analyst Intern</h3>
+                        <div class="meta"><span>Hyderabad</span><span>6 months</span></div>
+                        <div class="skills"><span>SQL</span><span>Python</span><span>Power BI</span></div>
+                        <div class="jobbottom"><strong>₹15k/mo</strong><button class="apply"
+                                data-job="Data Analyst Intern">Apply</button></div>
+                    </article>
+                    <article class="job" data-type="full-time" data-remote="yes"
+                        data-keywords="ui ux designer figma design product">
+                        <div class="jobtop"><span class="logo purple">A</span><button class="save"
+                                aria-label="Save UI/UX Designer" aria-pressed="false">♡</button></div>
+                        <p class="company">ArcDesign</p>
+                        <h3>UI/UX Designer</h3>
+                        <div class="meta"><span>Hybrid</span><span>Full-time</span></div>
+                        <div class="skills"><span>Figma</span><span>UX</span><span>Research</span></div>
+                        <div class="jobbottom"><strong>₹5–8 LPA</strong><button class="apply"
+                                data-job="UI/UX Designer">Apply</button></div>
+                    </article>
+                    <article class="job" data-type="internship" data-remote="yes"
+                        data-keywords="java software engineer developer spring mysql oop">
+                        <div class="jobtop"><span class="logo sand">S</span><button class="save"
+                                aria-label="Save Java Software Intern" aria-pressed="false">♡</button></div>
+                        <p class="company">SoftGrid</p>
+                        <h3>Java Software Intern</h3>
+                        <div class="meta"><span>Remote</span><span>4 months</span></div>
+                        <div class="skills"><span>Java</span><span>MySQL</span><span>OOP</span></div>
+                        <div class="jobbottom"><strong>₹10k–16k/mo</strong><button class="apply"
+                                data-job="Java Software Intern">Apply</button></div>
+                    </article>
+                    <article class="job" data-type="full-time" data-remote="no"
+                        data-keywords="cyber security analyst soc networking security">
+                        <div class="jobtop"><span class="logo ink">C</span><button class="save"
+                                aria-label="Save Security Analyst" aria-pressed="false">♡</button></div>
+                        <p class="company">CyberNest</p>
+                        <h3>Security Analyst</h3>
+                        <div class="meta"><span>Bengaluru</span><span>Full-time</span></div>
+                        <div class="skills"><span>Networking</span><span>SOC</span><span>Security</span></div>
+                        <div class="jobbottom"><strong>₹5.5–9 LPA</strong><button class="apply"
+                                data-job="Security Analyst">Apply</button></div>
+                    </article>
+                </div>
+                <p class="empty" id="empty" hidden>No opportunities match your search. Try another keyword or filter.
+                </p>
+            </section>
+            <section class="band" id="applications">
+                <div class="section">
+                    <div class="heading">
+                        <div>
+                            <p class="eyebrow">KEEP MOVING</p>
+                            <h2>Application tracker</h2>
+                        </div><span class="pill">4 active</span>
+                    </div>
+                    <div class="tracker">
+                        <article><b>2</b>
+                            <div><strong>Interview</strong><span>Prepare for your next conversation</span></div>
+                            <em>2</em>
+                        </article>
+                        <article><b>1</b>
+                            <div><strong>Under review</strong><span>Applications waiting for an update</span></div>
+                            <em>1</em>
+                        </article>
+                        <article><b>1</b>
+                            <div><strong>Saved</strong><span>Roles you want to revisit</span></div><em>1</em>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="resources">
+                <div class="heading">
+                    <div>
+                        <p class="eyebrow">CAREER TOOLKIT</p>
+                        <h2>Build your edge</h2>
+                    </div>
+                </div>
+                <div class="resources">
+                    <article><span>01</span>
+                        <h3>Polish your resume</h3>
+                        <p>Make your skills and project impact easy for recruiters to scan.</p><button
+                            class="resource">Open guide →</button>
+                    </article>
+                    <article><span>02</span>
+                        <h3>Prepare for interviews</h3>
+                        <p>Turn your projects into clear stories using situation, action and result.</p><button
+                            class="resource">Open guide →</button>
+                    </article>
+                    <article><span>03</span>
+                        <h3>Show your projects</h3>
+                        <p>Create a GitHub profile that communicates how you build and solve problems.</p><button
+                            class="resource">Open guide →</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="brand"><b>C</b><span>Career<span>Hub</span></span></div>
+            <p>Helping students take the next confident step.</p>
+            <div class="footlinks"><a href="#opportunities">Opportunities</a><a href="#applications">Tracker</a><a
+                    href="#resources">Resources</a></div><small>© 2026 CareerHub · DecodeLabs Project 1</small>
+        </footer>
+    </div>
+    <dialog id="dialog">
+        <form method="dialog" id="form">
+            <div class="modalhead">
+                <div>
+                    <p class="eyebrow">APPLICATION</p>
+                    <h2 id="jobtitle">Apply</h2>
+                </div><button value="cancel">×</button>
+            </div>
+            <p class="muted">Frontend demo only — no real application is submitted.</p><label for="name">Your
+                name</label><input id="name" required placeholder="Enter your name"><label
+                for="email">Email</label><input id="email" type="email" required placeholder="you@example.com">
+            <div class="modalactions"><button class="outline" value="cancel">Cancel</button><button class="primary"
+                    id="confirm" value="default">Save application</button></div>
+        </form>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
